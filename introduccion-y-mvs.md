@@ -53,7 +53,7 @@ Las MVs son las siguientes:
     - Adaptador en Red NAT con la IP fija 10.0.3.3
    
 ## Mapa de red
-[Mapa de red](img/mapa-de-red-idr.png)
+![Mapa de red](img/mapa-de-red-idr.png)
 
 
 [Siguiente: Instalación de Elasticsearch en la MV Monitor](#instalacion-de-elasticsearch-en-la-mv-monitor)

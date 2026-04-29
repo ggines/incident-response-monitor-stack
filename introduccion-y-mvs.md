@@ -56,4 +56,4 @@ Las MVs son las siguientes:
 ![Mapa de red](img/mapa-de-red-idr.png)
 
 
-[Siguiente: Instalación de Elasticsearch en la MV Monitor](#instalacion-de-elasticsearch-en-la-mv-monitor)
+[Siguiente: Instalación de Elasticsearch en la MV Monitor](instalacion-de-elasticsearch-en-la-mv-monitor)

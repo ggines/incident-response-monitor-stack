@@ -29,6 +29,8 @@ disco, red) y de los servicios que se ejecutan en el mismo (como Kubernetes, MyS
 En este caso, instalaremos Elasticsearch y Grafana en una MV con Ubuntu Server 24.04, y configuraremos otra MV con Ubuntu Server 24.04 para ser monitorizada,
 instalando Filebeat y Metricbeat. Por último, también habrá una MV con Kali Linux para realizar los ataques hacia víctima.
 
+## MVs necesarias
+
 Las MVs son las siguientes:
 - **Ubuntu Server 24.04 (Monitor):** Será el servidor que contiene Elasticsearch y Grafana.
   - **CPU:** 4

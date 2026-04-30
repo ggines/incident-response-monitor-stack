@@ -41,4 +41,4 @@ He probado a realizar la conexión anterior desde la MV víctima:
 
 > Para realizar la conexión desde la MV víctima, copié el certificado ```http_ca.crt``` desde el servidor y lo indiqué en el comando.
 
-[Siguiente: Instalación de Grafana en la MV Monitor](3-instalacion-de-grafana-en-la-mv-monitor.md)
+[Siguiente: Instalación de Grafana en la MV Monitor](4-instalacion-de-grafana-en-la-mv-monitor.md)

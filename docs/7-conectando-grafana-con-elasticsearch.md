@@ -6,8 +6,9 @@ http://192.168.56.102:3000/connections/datasources/new (indicando la IP que corr
 
 En la interfaz, desde **Home > Connections > Data sources > Add data source** he seleccionado Elasticsearch
 
-> A continuación, he creado un Data Source para ver los registros de Filebeat. Como este Data Source apunta al índice .ds-filebeat-*, solo mostrará lo que recopile
-Filebeat.
+> A continuación, he creado un Data Source para ver los registros de Filebeat.
+> 
+> Como este Data Source apunta al índice .ds-filebeat-*, solo mostrará lo que recopile Filebeat.
 
 ### Data Source de Filebeat para recopilar logs
 ![Nuevo data source en Grafana](/img/grafana-add-data-source.png)
@@ -35,3 +36,29 @@ De esta manera se ha creado una fuente de datos para Filebeat:
 
 ![Data source de seguridad creado](/img/seguridad-data-source.png)
 
+### Data Source de Metricbeat para recopilar métricas del sistema operativo
+> A continuación, he creado un Data Source para ver las métricas de Metricbeat.
+> 
+> Como este Data Source apunta al índice .ds-metricbeat-*, solo mostrará lo que recopile Metricbeat.
+
+![Nuevo data source en Grafana](/img/grafana-add-data-source-2.png)
+
+La configuración es la misma que el anterior Data Source. Únicamente he cambiado estos valores:
+- **Nombre:** Métricas (Metricbeat)
+
+  ![Nombre del data source](/img/nombre-metricbeat.png)
+
+- **Nombre del índice:** .ds-metricbeat-*
+
+  ![Nombre del índice](/img/metricbeat-index-name.png)
+
+De esta manera se ha creado una fuente de datos para Metricbeat. Las 2 fuentes de datos ya están creadas:
+
+![Data sources](/img/data-sources.png)
+
+A partir de aquí, podemos hacer consultas para cada fuente de datos.
+
+> En este caso, como cada data source apunta a un índice (Filebeat y Metricbeat), los dos tienen un propósito diferente. Uno muestra los registros del servidor SSH y
+el otro muestra las métricas del sistema.
+
+![Siguiente: Creación de dashboards en Grafana](8-creacion-de-dashboards-en-grafana.md)

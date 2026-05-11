@@ -22,7 +22,7 @@ paneles para mostrar diferentes registros en cada uno.
 Dashboard para mostrar registros relacionados con la seguridad, como intrusiones, cuentas vulneradas, IPs atacantes, etc...
 
 - **Panel de usuarios atacados:** Muestra qué cuentas están intentando vulnerar.
-  - **Query:** ```event.outcome: “failure”``` --> Si el log contiene la palabra failure, significa que intentaron acceder a esa cuenta, pero no se realizó con éxito.
+  - **Query:** ```event.outcome: "failure"``` --> Si el log contiene la palabra failure, significa que intentaron acceder a esa cuenta, pero no se realizó con éxito.
   - **Visualización:** Tabla
   - **Técnica de MITRE ATT&CK:** T1110 - Brute Force --> En un escenario real, el atacante podría usar técnicas de fuerza bruta para acceder a cuentas sin saber la contraseña.
 
@@ -68,7 +68,7 @@ Dashboard para mostrar métricas del rendimiento del sistema, como uso de la CPU
 - **Panel de consumo de memoria por proceso:** Muestra el porcentaje de memoria que están usando los procesos.
   - **Visualización:** Gráfica circular (Pie chart)
   - **Query:** ```NOT process.name: "metricbeat" AND NOT process.name: "filebeat"``` --> Para excluir el proceso de Metricbeat y Filebeat, que normalmente consumen bastante memoria.
-  - **Valor:** Permite identificar si el proceso sshd está consumiendo más recursos de lo normal debido a las conexiones concurrentes del atacante.
+  - **Valor:** Permite identificar si el proceso **sshd** está consumiendo más recursos de lo normal debido a las conexiones concurrentes del atacante.
 
     ![Query](/img/metricbeat-query.png)
 

@@ -1,16 +1,20 @@
 # ✔️ Conclusiones
 Este proyecto me ha permitido profundizar en el uso de **Grafana** como herramienta de
 monitorización, junto con **Elasticsearch** como motor de búsqueda y análisis de datos.
+
 He aprendido a conectar Grafana con Elasticsearch como fuente de datos y a
 implementar agentes como **Filebeat** y **Metricbeat** para centralizar registros y métricas
 del sistema operativo. A partir del archivo ```/var/log/auth.log``` y mediante Filebeat, he
 podido monitorear eventos relacionados con intentos de inicio de sesión y con el
-servicio SSH. Por su parte, Metricbeat me ha permitido obtener métricas en tiempo real
+servicio SSH.
+
+Por su parte, Metricbeat me ha permitido obtener métricas en tiempo real
 del sistema, como el tráfico de red y el consumo de memoria.
 También he aplicado medidas de hardening utilizando Fail2ban para proteger servicios
 críticos (SSH en este caso) y evitar posibles intrusiones. Posteriormente, he
 configurado Filebeat para monitorizar también los logs de Fail2ban, integrándolos en
 Grafana y permitiendo su visualización en paneles personalizados.
+
 Como conclusión, la integración de Grafana con Elasticsearch, junto con agentes
 como Filebeat y Metricbeat, demuestra que es posible crear un sistema de
 monitorización centralizado y orientado a la seguridad, funcionando como una

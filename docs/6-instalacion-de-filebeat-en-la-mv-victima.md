@@ -7,8 +7,8 @@ En el archivo de configuración de Filebeat ```/etc/filebeat/filebeat.yml``` he 
 - **output.elasticsearch:**
   - **hosts:** [https://10.0.3.10:9200] --> Indica la dirección del host donde está Elasticsearch
   - **protocol:** "https" --> Para utilizar el protocolo HTTPS
-  - **username:** "elastic" --> Indica el usuario de elasticsearch elastic
-  - **password:** "yvsSfQ4Xf*SfTz_XwjlF" --> Indica la contraseña del usuario elastic de Elasticsearch, proporcionada durante la instalación de Elasticsearch
+  - **username:** "elastic" --> Indica el usuario *elastic* de Elasticsearch
+  - **password:** "yvsSfQ4Xf*SfTz_XwjlF" --> Indica la contraseña del usuario *elastic* de Elasticsearch, proporcionada durante la instalación de Elasticsearch
   - **ssl:**
     - **certificate_authorities:** ["/etc/filebeat/certs/http_ca.crt"] --> Indica la ruta del certificado de Elasticsearch
 
@@ -32,7 +32,7 @@ He editado el archivo de configuración del módulo **system** (```/etc/filebeat
 
 Indicando la ruta ```/var/log/auth.log```, nos aseguramos de que Filebeat se centre en el archivo donde se registran los intentos de login.
 
-> Es importante habilitar estos filesets, ya que si están en false y el módulo no tiene indicado ningún archivo de log para leer, Filebeat se detendrá por seguridad.
+> Es importante habilitar estos filesets, ya que si están en ```false``` y el módulo no tiene indicado ningún archivo de log para leer, Filebeat se detendrá por seguridad.
 
 He ejecutado el comando ```sudo filebeat setup``` para preparar la infraestructura externa (Elasticsearch).
 Su función es cargar las plantillas de datos (mappings), las políticas de rotación de índices y los tableros visuales, asegurando que los logs se almacenen de

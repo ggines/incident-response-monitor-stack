@@ -38,6 +38,7 @@ Si ejecuto el comando ```sudo fail2ban-client status```, aparece la jaula que mo
 ![fail2ban client status](/img/fail2ban-client-status.png)
 
 Si se especifica el servicio en el comando, aparece más información. Incluyendo el total y la lista de IPs baneadas:
+
 ![fail2ban client status sshd](/img/fail2ban-client-status-sshd.png)
 
 En este punto, desde la Kali, he probado a iniciar sesión mediante SSH con una contraseña incorrecta.
@@ -144,8 +145,7 @@ Filebeat está detectando los logs correctamente. Tras bloquear la IP del Kali (
 
 ![Comprobación de que Filebeat lea los logs de fail2ban](/img/filebeat-reads-fail2ban-logs-2.png)
 
-Una vez creada la nueva fuente de datos, se trata de crear un dashboard en Grafana usando la fuente de datos de Fail2ban creada anteriormente con un panel que muestre
-algo en relación con los logs de Fail2ban.
+Una vez creada la nueva fuente de datos para Fail2ban, se trata de crear un dashboard en Grafana con un panel que muestre algo en relación con los logs de Fail2ban.
 
 Por ejemplo, he creado un panel que indica la cantidad de IPs que están bloqueadas por parte de Fail2ban.
 Para crear este panel, he seleccionado la fuente de datos Fail2ban. La query es ```fail2ban.ip: *```
@@ -211,5 +211,5 @@ Finalmente, tenemos 3 dashboards:
 
 ![Todos los dashboards](/img/all-dashboards.png)
 
-[Siguiente: Conclusiones y webgrafía](10-conclusiones-y-webgrafía.md)
+[Siguiente: Conclusiones y webgrafía](10-conclusiones-y-webgrafia.md)
 

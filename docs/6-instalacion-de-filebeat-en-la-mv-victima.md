@@ -82,4 +82,4 @@ En este caso aparecen los 2 índices (Metricbeat y Filebeat):
 
 Esto confirma que Metricbeat y Filebeat están funcionando y que los datos llegan a Elasticsearch.
 
-![Siguiente: Conectando Grafana con Elasticsearch](6-conectando-grafana-con-elasticsearch.md)
+![Siguiente: Conectando Grafana con Elasticsearch](7-conectando-grafana-con-elasticsearch.md)

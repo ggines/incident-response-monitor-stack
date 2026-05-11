@@ -27,7 +27,7 @@ Metricbeat es un agente ligero parte de Elastic Stack que se instala normalmente
 disco, red) y de los servicios que se ejecutan en el mismo (como Kubernetes, MySQL, NGINX...) para enviarlas de manera centralizada a sistemas como Elasticsearch.
 
 En este caso, instalaremos Elasticsearch y Grafana en una MV con Ubuntu Server 24.04, y configuraremos otra MV con Ubuntu Server 24.04 para ser monitorizada,
-instalando Filebeat y Metricbeat. Por último, también habrá una MV con Kali Linux para realizar los ataques hacia víctima.
+instalando Filebeat y Metricbeat. Por último, también habrá una MV con Kali Linux para realizar los ataques hacia la víctima.
 
 ## MVs necesarias
 

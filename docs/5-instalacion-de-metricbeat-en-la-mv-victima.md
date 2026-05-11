@@ -9,7 +9,7 @@ He descargado e instalado la clave de firma pública con el comando ```wget -qO 
 
 ![Instalación de la clave de firma pública](/img/victim-gpg-key-elasticsearch.png)
 
-He instalado el paquete apt-transport-http con el comando sudo apt-get install apt-transport-https
+He instalado el paquete apt-transport-http con el comando ```sudo apt-get install apt-transport-https```
 
 ![apt-transport-http](/img/victim-apt-transport-http.png)
 
@@ -29,8 +29,8 @@ He indicado que Metricbeat se inicie automáticamente al arrancar el sistema con
 He editado el archivo de configuración de Metricbeat ```/etc/metricbeat/metricbeat.yml``` realizando las siguientes modificaciones:
 - **output.elasticsearch:**
   - **hosts:** [https://10.0.3.10:9200] --> Indica la dirección del host donde está Elasticsearch
-  - **protocol:** “https” --> Para utilizar el protocolo HTTPS
-  - **username:** "elastic" --> Indica el usuario de Elasticsearch elastic
+  - **protocol:** "https" --> Para utilizar el protocolo HTTPS
+  - **username:** "elastic" --> Indica el usuario *elastic* de Elasticsearch
   - **password:** "yvsSfQ4Xf*SfTz_XwjlF" --> Indica la contraseña del usuario *elastic* de Elasticsearch, proporcionada durante la instalación de Elasticsearch
   - **ssl:**
     - **certificate_authorities:** ["/etc/metricbeat/certs/http_ca.crt"] --> Indica la ruta del certificado de Elasticsearch
@@ -48,8 +48,8 @@ propietario con los comandos ```chown monitor:monitor http_ca.crt``` y ```chmod 
 > 
 > ![Cambio de permisos de una copia del certificado](/img/chown-chmod-http-ca-crt.png)
 > 
-> 2- He iniciado un servidor HTTP con Python para recibir el archivo desde la MV Monitor, con el comando ```python3 -m http.server 8000``` desde el directorio
-```/home/monitor/ del servidor```. Y he descargado el archivo con el comando ```sudo wget http://10.0.3.10:8000/http_ca.crt``` desde el directorio ```/etc/metricbeat/certs``` de la MV víctima:
+> 2- He iniciado un servidor HTTP con Python para servir el archivo desde la MV Monitor, con el comando ```python3 -m http.server 8000``` desde el directorio
+```/home/monitor/``` del servidor. Y he descargado el archivo con el comando ```sudo wget http://10.0.3.10:8000/http_ca.crt``` desde el directorio ```/etc/metricbeat/certs``` de la MV víctima:
 > 
 > ![Obtener el certificado desde la MV Monitor](/img/python-server-wget.png)
 
@@ -70,7 +70,7 @@ para configurar los flujos de datos y las vistas de Metricbeat en Elasticsearch.
 
 > En este caso aparece un mensaje de error en relación con Kibana, pero es normal porque en esta práctica no estamos usando Kibana, sino Grafana.
 
-He ejecutado el siguiente comando para cargar los “assets” de Metricbeat:
+He ejecutado el siguiente comando para cargar los "assets" de Metricbeat:
 ```
 sudo metricbeat setup --index-management \
 -E output.elasticsearch.hosts=["https://10.0.3.10:9200"] \

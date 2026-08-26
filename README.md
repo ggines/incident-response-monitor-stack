@@ -21,4 +21,7 @@ Este sistema está compuesto por herramientas open source, siendo estas Grafana,
   - [Dashboard de Fail2ban en Grafana](docs/9-protegiendo-el-servidor-ssh-de-la-mv-victima-con-fail2ban.md#dashboard-de-fail2ban-en-grafana)
 - [Conclusiones y webgrafía](docs/10-conclusiones-y-webgrafia.md)
 
+### Documentación en PDF 📄
+La documentación también se puede descargar en [formato PDF](https://github.com/ggines/incident-response-monitor-stack/blob/main/docs/Monitorizacion-Incidentes-Grafana-Elasticsearch-Fail2ban.pdf).
+
 

@@ -22,6 +22,6 @@ Este sistema está compuesto por herramientas open source, siendo estas Grafana,
 - [Conclusiones y webgrafía](docs/10-conclusiones-y-webgrafia.md)
 
 ### Documentación en PDF 📄
-La documentación también se puede descargar en [formato PDF](https://github.com/ggines/incident-response-monitor-stack/blob/main/docs/Monitorizacion-Incidentes-Grafana-Elasticsearch-Fail2ban.pdf).
+La documentación también se puede descargar en [formato PDF](https://github.com/ggines/incident-response-monitor-stack/blob/main/docs/Monitorizacion-Incidentes-Grafana-Elasticsearch-Fail2ban-GuillermoGines.pdf).
 
 

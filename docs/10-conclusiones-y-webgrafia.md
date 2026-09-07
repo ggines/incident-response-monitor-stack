@@ -23,8 +23,8 @@ alternativa ligera a un SIEM para supervisar eventos y métricas relevantes del 
 # 📘 Webgrafía
 Fuentes consultadas para realizar este proyecto:
 
-- *Install Elasticsearch with a Debian package | Elastic Docs*: https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package#deb-repo
-- *Install Grafana | Grafana documentation*: https://grafana.com/docs/grafana/latest/setup-grafana/installation/
-- *Metricbeat con Elasticsearch 8.x - Parte 1: Instalación y protección*: https://evermight.com/es/instalacion-de-metricbeat-parte-1
-- *Repositorios para APT y YUM para Metricbeat | Elastic Docs*: https://www.elastic.co/docs/reference/beats/metricbeat/setup-repositories
-- *Repositorios para APT y YUM para Filebeat | Elastic Docs*: https://www.elastic.co/docs/reference/beats/filebeat/setup-repositories
+- [Install Elasticsearch with a Debian package | Elastic Docs](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package#deb-repo) - *Elastic Docs*
+- [Install Grafana | Grafana documentation](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) - *Grafana documentation*
+- [Metricbeat con Elasticsearch 8.x - Parte 1: Instalación y protección](https://evermight.com/es/instalacion-de-metricbeat-parte-1) - *Evermight*
+- [Repositories for APT and YUM (Metricbeat)](https://www.elastic.co/docs/reference/beats/metricbeat/setup-repositories) - *Elastic Docs*
+- [Repositories for APT and YUM (Filebeat)](https://www.elastic.co/docs/reference/beats/filebeat/setup-repositories) - *Elastic Docs*
